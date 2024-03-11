@@ -62,7 +62,7 @@ public class HashTagTokenizer {
 		} else {
 			temp += hashtag.charAt(i);
 		} 
-		breakHashTag(hashtag, dictionary, i++, temp);
+		breakHashTag(hashtag, dictionary, ++i, temp);
     }
 
 }
