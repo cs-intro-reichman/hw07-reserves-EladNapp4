@@ -8,7 +8,7 @@ public class HashTagTokenizer {
 		String []dictionary = readDictionary("dictionary.txt");
 		breakHashTag(hashTag, dictionary);
 
-       //String hashTag = "iLoverecursion";
+       String hashTag1 = "iLoverecursion";
 
 		//String[] dictionary = readDictionary("dictionary.txt");
 
