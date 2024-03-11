@@ -32,9 +32,9 @@ public class HashTagTokenizer {
 		
 		for ( int i = 0; i < dictionary.length; i++) {
 			
-			if ( dictionary[i] == word )
-			    return true;
-
+			if ( dictionary[i].equals(word)) {
+				return true;
+			}
 		}
 		return false;
 	}
