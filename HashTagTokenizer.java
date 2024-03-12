@@ -46,7 +46,7 @@ public class HashTagTokenizer {
 
 	public static void breakHashTag(String hashtag, String[] dictionary, int i, String temp) {
 
-		if (i >= hashtag.length()) {
+		if (i >= hashtag.length() || hashtag.isEmpty()) {
 			return;
 		}
 
@@ -55,7 +55,7 @@ public class HashTagTokenizer {
         }
  
         //int N = hashtag.length();
-
+		temp += hashtag.charAt(i);
 		if (existInDictionary(temp, dictionary)) {
 		    System.out.println(temp);
 			temp = "";
